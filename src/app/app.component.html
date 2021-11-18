@@ -1,4 +1,7 @@
-<hello (newItemEvent)="addItem($event)" ></hello>
+<h3>Parent to Child & vice Versa</h3>
+
+<hello [item]="currentItem" (newItemEvent)="addItem($event)" ></hello>
+
 <ul>
   <li *ngFor="let item of items">{{item}}</li>
 </ul>
